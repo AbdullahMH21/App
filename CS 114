@@ -87,7 +87,7 @@ class _Cs114WidgetState extends State<Cs114Widget> {
             ),
             actions: [
               Align(
-                alignment: AlignmentDirectional(0.00, -1.00),
+                alignment: AlignmentDirectional(0, -1),
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 0, 22, 0),
                   child: FFButtonWidget(
@@ -125,40 +125,261 @@ class _Cs114WidgetState extends State<Cs114Widget> {
           top: true,
           child: Stack(
             children: [
-              Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Column(
-                    mainAxisSize: MainAxisSize.max,
+              Align(
+                alignment: AlignmentDirectional(0, 0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Stack(
                     children: [
-                      Align(
-                        alignment: AlignmentDirectional(-0.90, 0.00),
-                        child: Text(
-                          'Sections',
-                          style:
-                              FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Readex Pro',
-                                    fontSize: 40,
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Align(
+                                  alignment: AlignmentDirectional(-0.9, 0),
+                                  child: Text(
+                                    'Sections',
+                                    style: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          fontSize: 40,
+                                        ),
                                   ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 22, 0),
-                        child: Container(
-                          width: 967,
-                          height: 68,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 22, 0),
+                                  child: Container(
+                                    width: 967,
+                                    height: 68,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1, 0),
+                                          child: Text(
+                                            'Logic Theory',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: Colors.black,
+                                                  fontSize: 30,
+                                                ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(1, 0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              context
+                                                  .pushNamed('LogicTheory114');
+                                            },
+                                            text: 'Start',
+                                            options: FFButtonOptions(
+                                              height: 40,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(24, 0, 24, 0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 0, 0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        color: Colors.white,
+                                                      ),
+                                              elevation: 3,
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 22, 0),
+                                  child: Container(
+                                    width: 967,
+                                    height: 68,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1, 0),
+                                          child: Text(
+                                            'Proof Techniques',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: Colors.black,
+                                                  fontSize: 30,
+                                                ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(1, 0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              context
+                                                  .pushNamed('ProofTechs114');
+                                            },
+                                            text: 'Start',
+                                            options: FFButtonOptions(
+                                              height: 40,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(24, 0, 24, 0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 0, 0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        color: Colors.white,
+                                                      ),
+                                              elevation: 3,
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 22, 0),
+                                  child: Container(
+                                    width: 967,
+                                    height: 68,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1, 0),
+                                          child: Text(
+                                            'Fundemental Structures',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: Colors.black,
+                                                  fontSize: 30,
+                                                ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(1, 0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              context
+                                                  .pushNamed('FundStruct114');
+                                            },
+                                            text: 'Start',
+                                            options: FFButtonOptions(
+                                              height: 40,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(24, 0, 24, 0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 0, 0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        color: Colors.white,
+                                                      ),
+                                              elevation: 3,
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                          child: Stack(
-                            children: [
-                              Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 20, 34, 0),
+                            child: Container(
+                              width: 361,
+                              height: 163,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Colors.black,
+                                ),
+                              ),
+                              child: Align(
+                                alignment: AlignmentDirectional(-1, 0),
                                 child: Text(
-                                  'Logic Theory',
+                                  'Discussion Board  & Lectures \n(Coming Soon!)',
+                                  textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -168,186 +389,13 @@ class _Cs114WidgetState extends State<Cs114Widget> {
                                       ),
                                 ),
                               ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
-                                child: FFButtonWidget(
-                                  onPressed: () async {
-                                    context.pushNamed('SAndL114');
-                                  },
-                                  text: 'Start',
-                                  options: FFButtonOptions(
-                                    height: 40,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        24, 0, 24, 0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 0),
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          color: Colors.white,
-                                        ),
-                                    elevation: 3,
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 22, 0),
-                        child: Container(
-                          width: 967,
-                          height: 68,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: FlutterFlowTheme.of(context).secondaryText,
                             ),
                           ),
-                          child: Stack(
-                            children: [
-                              Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
-                                child: Text(
-                                  'Proof Techniques',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Readex Pro',
-                                        color: Colors.black,
-                                        fontSize: 30,
-                                      ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
-                                child: FFButtonWidget(
-                                  onPressed: () async {
-                                    context.pushNamed('SAndL114');
-                                  },
-                                  text: 'Start',
-                                  options: FFButtonOptions(
-                                    height: 40,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        24, 0, 24, 0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 0),
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          color: Colors.white,
-                                        ),
-                                    elevation: 3,
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 22, 0),
-                        child: Container(
-                          width: 967,
-                          height: 68,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                            ),
-                          ),
-                          child: Stack(
-                            children: [
-                              Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
-                                child: Text(
-                                  'Fundemental Structures',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Readex Pro',
-                                        color: Colors.black,
-                                        fontSize: 30,
-                                      ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
-                                child: FFButtonWidget(
-                                  onPressed: () async {
-                                    context.pushNamed('SAndL114');
-                                  },
-                                  text: 'Start',
-                                  options: FFButtonOptions(
-                                    height: 40,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        24, 0, 24, 0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 0),
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          color: Colors.white,
-                                        ),
-                                    elevation: 3,
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 34, 0),
-                        child: Container(
-                          width: 577,
-                          height: 84,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).alternate,
-                            border: Border.all(
-                              color: Colors.black,
-                            ),
-                          ),
-                          child: Align(
-                            alignment: AlignmentDirectional(-1.00, 0.00),
-                            child: Text(
-                              'Discussion Board (Coming Soon!)',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    color: Colors.black,
-                                    fontSize: 30,
-                                  ),
-                            ),
-                          ),
-                        ),
+                        ],
                       ),
                     ],
                   ),
-                ],
+                ),
               ),
             ],
           ),
