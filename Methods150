@@ -108,14 +108,44 @@ class _Methods150WidgetState extends State<Methods150Widget> {
           top: true,
           child: Stack(
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-                child: FlutterFlowPdfViewer(
-                  assetPath: 'assets/pdfs/Methods.pdf',
-                  height: 813,
-                  horizontalScroll: false,
+              Stack(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: FlutterFlowPdfViewer(
+                      assetPath: 'assets/pdfs/Methods.pdf',
+                      height: 770,
+                      horizontalScroll: false,
+                    ),
+                  ),
+                ],
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.94, 0.34),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('Methods150Lec');
+                  },
+                  text: 'Watch Lecture',
+                  options: FFButtonOptions(
+                    width: 200,
+                    height: 50,
+                    padding: EdgeInsetsDirectional.fromSTEB(24, 0, 24, 0),
+                    iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                    color: FlutterFlowTheme.of(context).primary,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                 ),
               ),
             ],
