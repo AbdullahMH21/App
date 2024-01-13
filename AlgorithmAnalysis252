@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -6,25 +7,27 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-import 's_and_l114_model.dart';
-export 's_and_l114_model.dart';
+import 'algorithm_analysis252_model.dart';
+export 'algorithm_analysis252_model.dart';
 
-class SAndL114Widget extends StatefulWidget {
-  const SAndL114Widget({Key? key}) : super(key: key);
+class AlgorithmAnalysis252Widget extends StatefulWidget {
+  const AlgorithmAnalysis252Widget({Key? key}) : super(key: key);
 
   @override
-  _SAndL114WidgetState createState() => _SAndL114WidgetState();
+  _AlgorithmAnalysis252WidgetState createState() =>
+      _AlgorithmAnalysis252WidgetState();
 }
 
-class _SAndL114WidgetState extends State<SAndL114Widget> {
-  late SAndL114Model _model;
+class _AlgorithmAnalysis252WidgetState
+    extends State<AlgorithmAnalysis252Widget> {
+  late AlgorithmAnalysis252Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SAndL114Model());
+    _model = createModel(context, () => AlgorithmAnalysis252Model());
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -69,7 +72,7 @@ class _SAndL114WidgetState extends State<SAndL114Widget> {
             ),
             actions: [
               Align(
-                alignment: AlignmentDirectional(0.00, -1.00),
+                alignment: AlignmentDirectional(0, -1),
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 0, 22, 0),
                   child: FFButtonWidget(
@@ -105,22 +108,46 @@ class _SAndL114WidgetState extends State<SAndL114Widget> {
         ),
         body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
+          child: Stack(
             children: [
-              Align(
-                alignment: AlignmentDirectional(0.00, 0.00),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
-                  child: Text(
-                    'Coming Soon!',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          fontSize: 70,
-                        ),
+              Container(
+                width: 1476,
+                height: 1314,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Align(
+                  alignment: AlignmentDirectional(-0.94, 0.34),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      context.pushNamed('AlgorithmAnalysis252Lec');
+                    },
+                    text: 'Watch Lecture',
+                    options: FFButtonOptions(
+                      width: 200,
+                      height: 50,
+                      padding: EdgeInsetsDirectional.fromSTEB(24, 0, 24, 0),
+                      iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                      color: FlutterFlowTheme.of(context).primary,
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Readex Pro',
+                                color: Colors.white,
+                              ),
+                      elevation: 3,
+                      borderSide: BorderSide(
+                        color: Colors.transparent,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                 ),
+              ),
+              FlutterFlowPdfViewer(
+                assetPath: 'assets/pdfs/3_ch04_Algorithm_Analysis(Edited).pdf',
+                height: 770,
+                horizontalScroll: false,
               ),
             ],
           ),
